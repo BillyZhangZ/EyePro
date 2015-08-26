@@ -10,6 +10,8 @@
 		836855C01B8DCB65001CF4E5 /* BLEDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 836855BF1B8DCB65001CF4E5 /* BLEDevice.h */; };
 		836855C21B8DCB65001CF4E5 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 836855C11B8DCB65001CF4E5 /* BLEDevice.m */; };
 		836855C81B8DCB65001CF4E5 /* libBLEDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 836855BC1B8DCB65001CF4E5 /* libBLEDevice.a */; };
+		836855D71B8DCBA5001CF4E5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836855D61B8DCBA5001CF4E5 /* CoreBluetooth.framework */; };
+		836855D91B8DCBB6001CF4E5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836855D81B8DCBB6001CF4E5 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +28,7 @@
 		836855BA1B8DCB65001CF4E5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = "../include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 				836855C01B8DCB65001CF4E5 /* BLEDevice.h in CopyFiles */,
@@ -41,6 +43,9 @@
 		836855C11B8DCB65001CF4E5 /* BLEDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
 		836855C71B8DCB65001CF4E5 /* BLEDeviceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDeviceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836855CD1B8DCB65001CF4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836855D61B8DCBA5001CF4E5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		836855D81B8DCBB6001CF4E5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		836855E51B8DCC34001CF4E5 /* BLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836855D91B8DCBB6001CF4E5 /* CoreFoundation.framework in Frameworks */,
+				836855D71B8DCBA5001CF4E5 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 		836855B31B8DCB65001CF4E5 = {
 			isa = PBXGroup;
 			children = (
+				836855D81B8DCBB6001CF4E5 /* CoreFoundation.framework */,
+				836855D61B8DCBA5001CF4E5 /* CoreBluetooth.framework */,
 				836855BE1B8DCB65001CF4E5 /* BLEDevice */,
 				836855CB1B8DCB65001CF4E5 /* BLEDeviceTests */,
 				836855BD1B8DCB65001CF4E5 /* Products */,
@@ -83,6 +92,7 @@
 		836855BE1B8DCB65001CF4E5 /* BLEDevice */ = {
 			isa = PBXGroup;
 			children = (
+				836855E51B8DCC34001CF4E5 /* BLEService.h */,
 				836855BF1B8DCB65001CF4E5 /* BLEDevice.h */,
 				836855C11B8DCB65001CF4E5 /* BLEDevice.m */,
 			);
@@ -362,6 +372,7 @@
 				836855D21B8DCB65001CF4E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836855D31B8DCB65001CF4E5 /* Build configuration list for PBXNativeTarget "BLEDeviceTests" */ = {
 			isa = XCConfigurationList;
@@ -370,6 +381,7 @@
 				836855D51B8DCB65001CF4E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
