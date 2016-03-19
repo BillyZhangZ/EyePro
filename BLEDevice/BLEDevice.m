@@ -223,8 +223,8 @@ typedef enum{
         // and disconnect from the peripehral
         [_heartRateManager cancelPeripheralConnection:peripheral];
     }
-    
-    heartRate = *((Byte *)characteristic.value.bytes+1);
+    //0x31 0x32 0x33 0x34
+    heartRate = *((Byte *)characteristic.value.bytes);
     if(!self.simulator)
         [_heartRateDelegate didUpdateHeartRate:heartRate];
     // Log it
